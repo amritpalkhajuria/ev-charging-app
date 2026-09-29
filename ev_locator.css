@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+#top-strip {
+  width: 100%;
+  background-color: #66c2a6;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#top-strip h2 {
+  margin: 0;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#left-panel {
+  margin-top: 150px;
+  width: 30%;
+  padding: 80px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  color: black;
+  font-size: 40px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#session-buttons,
+#payment-button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map {
+  margin-left: 450px;
+  margin-right: 400px;
+  width: calc(80% - 30px);
+  height: 70%;
+  background-color: #f4f4f9;
+  margin-top: 200px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#progress-wrapper {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+progress {
+  width: 100%;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.2s ease-in-out;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.2s ease-in-out;
+}
+
+#progress-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+#total-cost {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}

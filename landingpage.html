@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Electric Club</title>
+    <link rel="stylesheet" href="landingpage.css" />
+    <script>
+      function redirectToLogin() {
+        window.location.href = "login.html";
+      }
+
+      function redirectToRegister() {
+        window.location.href = "register.html";
+      }
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Future Fuelling</div>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Help Line</a>
+        <a href="#">Contact</a>
+        <a href="#">News</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1>Welcome to the Electric Vehicle Charging Club</h1>
+      <div class="logo-container">
+        <img
+          src="https://static.wixstatic.com/media/df1b4c_f1e77e42a1ab4c50a2974ffd956327ca~mv2.png/v1/fill/w_310,h_310,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/df1b4c_f1e77e42a1ab4c50a2974ffd956327ca~mv2.png"
+          alt="EV Logo"
+          class="logo-img"
+        />
+      </div>
+      <p>Save with Solar! Exchange and charge smarter with renewable energy.</p>
+      <div class="circle-buttons">
+        <button class="circle-btn" onclick="redirectToLogin()">Login</button>
+        <button class="circle-btn" onclick="redirectToRegister()">
+          Create Account
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>© 2024 Solar Electric Club. All rights reserved.</p>
+      <div class="socials">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">FAQs</a>
+      </div>
+    </footer>
+  </body>
+</html>

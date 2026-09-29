@@ -1,0 +1,29 @@
+{
+  "country": "GB",
+  "source_records": 27638,
+  "loaded_records": 27088,
+  "retained_pct": 98,
+  "dropped": {
+    "missing_coordinates": 0,
+    "outside_country": 13,
+    "no_connectors": 105,
+    "test_record": 1,
+    "not_operational": 345,
+    "duplicate": 86
+  },
+  "fixed": {
+    "coordinates_sign_flipped": 2,
+    "encoding_repaired": 26,
+    "missing_address": 1334,
+    "missing_power": 89
+  },
+  "database": {
+    "engine": "mssql",
+    "rows_after": 27088,
+    "inserted": 0,
+    "updated": 16,
+    "unchanged": 27072
+  },
+  "seconds": 1.972,
+  "run_at": "2026-09-29T17:59:48.569Z"
+}

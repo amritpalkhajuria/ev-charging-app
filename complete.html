@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment complete</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="landingpage.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="./config.js"></script>
+    <script src="./complete.js" defer></script>
+  </head>
+
+  <body>
+    <main class="hero">
+      <h1>Thank you for your payment</h1>
+      <p id="payment-status">Checking payment status...</p>
+      <pre id="payment-intent"></pre>
+      <a href="ev_locator.html">Back to the map</a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "ev-charging-app",
+  "version": "1.0.0",
+  "description": "EV charging station platform: OpenChargeMap ingestion, cleaning, load into Azure SQL Database (or MySQL locally), and a map-based front end.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "db:init": "node initDb.js",
+    "fetch:stations": "node fetchOpenchargeStations.js",
+    "load:stations": "node storeStations.js",
+    "load:dry-run": "node storeStations.js --dry-run"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mssql": "^11.0.2",
+    "mysql2": "^3.10.0"
+  }
+}

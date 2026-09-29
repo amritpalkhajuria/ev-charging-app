@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EV Charging Stations</title>
+    <link rel="stylesheet" href="ev_locator.css" />
+  </head>
+
+  <body>
+    <div id="top-strip">
+      <h2>Future Fuelling</h2>
+    </div>
+
+    <div id="left-panel">
+      <h1>Charge your vehicle anywhere </h1>
+      <button onclick="initMap()">See charging stations</button>
+
+      <div id="session-buttons" style="display: none;">
+        <button id="start-charging" onclick="startCharging()">Start Charging Session</button>
+        <div id="charging-progress" style="display: none;">
+            <h3>Charging Progress</h3>
+            <div id="progress-wrapper">
+              <progress id="progress-bar" value="0" max="100"></progress>
+            </div>
+            <p id="progress-text">0% Charging</p>
+            <p id="total-cost" style="display: none;">Total Cost: $<span id="cost-amount">0.00</span></p>
+          </div>
+        <button id="complete-charging" onclick="completeCharging()" disabled>Complete Energy Transfer</button>
+      </div>
+      
+      
+      <div id="payment-button" style="display: none;">
+        <button id="proceed-to-payment" onclick="proceedToPayment()">Proceed to Payment</button>
+      </div>
+    </div>
+    </div>
+
+    <div id="right-panel">
+      <div id="map"></div>
+
+      <!-- config.local.js holds the Google Maps key and is not committed;
+           copy config.local.example.js to create it -->
+      <script src="config.local.js"></script>
+      <script src="ev_locator.js"></script>
+      <script>
+        const mapsScript = document.createElement("script");
+        mapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${window.LOCAL_CONFIG.GOOGLE_MAPS_API_KEY}&libraries=places&callback=initMap`;
+        mapsScript.async = true;
+        document.head.appendChild(mapsScript);
+      </script>
+    </div>
+  </body>
+</html>
